@@ -1,0 +1,15 @@
+.wrapper--text--locations--one,
+.wrapper--text--locations--two :global(.vtex-rich-text-0-x-paragraph) {
+  margin: 0;
+  font-size: 12px;
+  color: rgba(0,0,0,.5);
+  font-family: "Neue-Regular";
+  font-weight: 400;
+}
+
+.wrapper--text--locations--two :global(.vtex-rich-text-0-x-paragraph) {
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+  line-height: 0.8;
+}

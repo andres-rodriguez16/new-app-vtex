@@ -1,0 +1,42 @@
+
+.searchBarContainer :global(.vtex-input-prefix__group) {
+  border-radius   : 2px;
+  border          : none;
+  box-shadow      : 0 1px 2px 0 rgba(0, 0, 0, .2);
+  background-color: #fff;
+  width: 404px;
+}
+
+.searchBarContainer :global(.vtex-input-prefix__group):focus {
+  border: 1px solid #3483fa !important;
+}
+
+/* .searchBarContainer :global(.vtex-input-prefix__group):hover{
+  border: 1px solid #3483fa !important;
+} */
+
+
+.searchBarContainer :global(.vtex-styleguide-9-x-input) {
+  font-family: 'Neue-Regular';
+  color      : #333;
+  font-size  : 16px;
+  font-weight: 400;
+}
+
+.searchBarContainer :global(.vtex-input__suffix)::before {
+  content: "";
+  display    : block;
+  height     : 26px;
+  border-left: 1px solid #e6e6e6;
+  padding-left: 10px;
+}
+
+@media (min-width : 1200px) {
+  .searchBarContainer :global(.vtex-input-prefix__group) {
+    width: 580px;
+  }
+}
+
+.logoImage--logo__mercado-libre {
+  min-width: 134px;
+}

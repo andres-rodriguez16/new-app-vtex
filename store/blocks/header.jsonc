@@ -1,68 +1,173 @@
 {
   "header": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header.full": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
+  // desktop
   "header-layout.desktop": {
     "children": [
       "sticky-layout#desktop"
     ]
   },
   "sticky-layout#desktop": {
+    "title": "sticky__header--container",
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#desktop"]
+    "children": [
+      "flex-layout.row#desktop__header--top",
+      "flex-layout.row#desktop__header--bottom"
+    ]
   },
-  "flex-layout.row#desktop": {
+  // container top
+  "flex-layout.row#desktop__header--top": {
+    "title": "container top",
     "props": {
       "horizontalAlign": "center",
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "fullWidth": true
+      "fullWidth": true,
+      "blockClass": "container__header-top"
     },
     "children": [
       "flex-layout.col#logo-desktop",
-      "flex-layout.col#spacer",
-      "search-bar",
-      "locale-switcher",
-      "login",
-      "minicart.v2"
+      "search-bar#header__search",
+      "flex-layout.col#promotions-desktop"
+      // "locale-switcher",
+      // "login",
+      // "minicart.v2"
     ]
   },
-  "flex-layout.col#spacer": {
-    "props": {
-      "width": "grow"
-    }
-  },
   "flex-layout.col#logo-desktop": {
+    "title": "logo-desktop",
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["logo"]
+    "children": [
+      "logo"
+    ]
+  },
+  "flex-layout.col#promotions-desktop": {
+    "title": "container promotions disney and star+",
+    "children": [
+      "image#promotions-disney-and-star+"
+    ],
+    "props": {
+      "verticalAlign": "middle"
+    }
+  },
+  "image#promotions-disney-and-star+": {
+    "title": "image promotions-disney-and-star+ ",
+    "props": {
+      "src": "assets/image/header-desktop-promotion-disney.png",
+      "maxHeight": 39,
+      "maxWidth": 340
+    }
   },
   "logo": {
+    "title": "logo-image",
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
-      "width": "80"
+      "url": "assets/image/header-deskot-logo.png",
+      "width": "134",
+      "blockClass": "logo__mercado-libre"
     }
   },
+  // container bottom
+  "flex-layout.row#desktop__header--bottom": {
+    "title": "header__container--bottom",
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "container__header--bottom"
+    },
+    "children": [
+      "flex-layout.row#locations"
+      // "flex-layout.col#section__menu-center",
+      // "flex-layout.col#section__menu--user"
+    ]
+  },
+
+  "flex-layout.row#locations" : {
+    "title":"container__location",
+    "children": [
+      // "flex-layout.col#section_icon",
+      "flex-layout.col#section_text"
+    ]
+  },
+  "flex-layout.col#section_text" : {
+    "title": "container__section--text",
+    "children": [
+      "rich-text#text--top",
+      "rich-text#text--bottom"
+    ],
+    "props": {
+      "blockClass" : "col__section--text",
+      "rowGap" : 0
+    }
+  },
+  "rich-text#text--top": {
+    "title": "text--top",
+    "props": {
+      "text": "Ingresa tu",
+      "blockClass" : "text--locations--one"
+    }
+  },
+  "rich-text#text--bottom": {
+    "title": "text-bottom",
+    "props": {
+      "text": "ubicación",
+      "blockClass" : "text--locations--two"
+    }
+  },
+  "search-bar#header__search": {
+    "title": "search-bar",
+    "blocks": [
+      "autocomplete-result-list.v2"
+    ],
+    "props": {
+      "openAutocompleteOnFocus": false,
+      "displayMode": "search-button",
+      "maxWidth": 580,
+      "containerMode": "container",
+      "placeholder": "Buscar productos, marcas y más…"
+    }
+  },
+  "autocomplete-result-list.v2": {
+    "title": "search-bar__autocomplete",
+    "blocks": [
+      "product-summary"
+    ]
+  },
+  // mobile
   "header-layout.mobile": {
-    "children": ["sticky-layout#mobile"]
+    "children": [
+      "sticky-layout#mobile"
+    ]
   },
   "sticky-layout#mobile": {
-    "children": ["flex-layout.row#mobile"]
+    "children": [
+      "flex-layout.row#mobile"
+    ]
   },
   "flex-layout.row#mobile": {
     "children": [
       "drawer",
       "logo",
-      "flex-layout.col#spacer",
+      // "flex-layout.col#spacer",
       "login",
       "minicart.v2"
     ],

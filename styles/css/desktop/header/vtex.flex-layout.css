@@ -1,0 +1,10 @@
+
+.flexRowContent--container__header-top {
+  gap: 40px;
+}
+
+@media (min-width : 1025px) and (max-width: 1190px) {
+  .flexRowContent--container__header-top {
+    gap: 0;
+  }
+}

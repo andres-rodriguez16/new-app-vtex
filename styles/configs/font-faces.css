@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Proxima-nova';
+  src: url(assets/fonts/ProximaNovaT-Thin.ttf);
+}
+
+@font-face {
+  font-family: 'Neue-Regular';
+  src: url(assets/fonts/ComicNeue-Regular.ttf);
+  font-weight: bold;
+}
+
