@@ -1,7 +1,7 @@
 .wrapper--sticky-header {
   background-color: #fff159;
 }
-.wrapper--sticky-header {
-  position: relative;
-  /* height: 62px !important; */
-}
+
+/* .wrapper--sticky-header {
+  position : relative;
+} */

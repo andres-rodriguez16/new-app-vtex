@@ -1,0 +1,14 @@
+{
+  "minicart.v2#header": {
+    "props": {
+      // "openOnHover": false,
+      "MinicartIcon": "icon-cart#minicart-icon",
+      "itemCountMode": "distinct"
+    }
+  },
+  "icon-cart#minicart-icon": {
+    "props": {
+      "size": 20
+    }
+  }
+}

@@ -1,0 +1,187 @@
+{
+  // container bottom
+  "flex-layout.row#desktop__header--bottom": {
+    "title": "header__container--bottom",
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "container__header--bottom",
+      "colGap": 7
+    },
+    "children": [
+      "flex-layout.row#locations",
+      "flex-layout.row#section__menu-center",
+      "flex-layout.row#section__menu--user"
+    ]
+  },
+  // bottom - left
+  "flex-layout.row#locations": {
+    "title": "container__location",
+    "children": [
+      "flex-layout.col#section_text"
+    ],
+    "props": {
+      "blockClass": "container__row--locations"
+    }
+  },
+  "flex-layout.col#section_text": {
+    "title": "container__section--text",
+    "children": [
+      "rich-text#text--top",
+      "rich-text#text--bottom"
+    ],
+    "props": {
+      "blockClass": "col__section--text",
+      "rowGap": 0
+    }
+  },
+  "rich-text#text--top": {
+    "title": "text--top",
+    "props": {
+      "text": "Ingresa tu",
+      "blockClass": "text--locations--one"
+    }
+  },
+  "rich-text#text--bottom": {
+    "title": "text-bottom",
+    "props": {
+      "text": "ubicación",
+      "blockClass": "text--locations--two"
+    }
+  },
+  // bottom center
+  "flex-layout.row#section__menu-center": {
+    "title": "section__menu-center",
+    "children": [
+      // "vtex.menu@2.x:menu#websites",
+      "flex-layout.col#categories",
+      "rich-text#Offers",
+      "rich-text#History",
+      "rich-text#Supermarket",
+      "rich-text#Fashion",
+      "rich-text#Sell",
+      "rich-text#Help"
+    ],
+    "props": {
+      "colGap": 4,
+      "blockClass": "container__menu--center",
+      "colSizing": "auto"
+    }
+  },
+  "flex-layout.col#categories": {
+    "title": "col-category",
+    "children": [
+      "rich-text#category"
+    ],
+    "props": {
+      "blockClass": "col-categories"
+    }
+  },
+  // text menu center
+  "rich-text#category": {
+    "title": "text-category",
+    "props": {
+      "text": "Categoría"
+    }
+  },
+  "rich-text#Fashion": {
+    "title": "text-fashion",
+    "props": {
+      "text": "Moda"
+    }
+  },
+  "rich-text#History": {
+    "title": "text-History",
+    "props": {
+      "text": "Historial"
+    }
+  },
+  "rich-text#Supermarket": {
+    "title": "text-supermarket",
+    "props": {
+      "text": "Supermercado",
+      "blockClass": "text--supermarket"
+    }
+  },
+  "rich-text#Offers": {
+    "title": "text-Offers",
+    "props": {
+      "text": "Ofertas"
+    }
+  },
+  "rich-text#Sell": {
+    "title": "text-sell",
+    "props": {
+      "text": "Vender"
+    }
+  },
+  "rich-text#Help": {
+    "title": "text-help",
+    "props": {
+      "text": "Ayuda / PQR"
+    }
+  },
+  // right bottom
+  "flex-layout.row#section__menu--user": {
+    "title": "section__user",
+    "children": [
+      "login",
+      "minicart.v2#header"
+    ],
+    "props": {
+      "colSizing": "auto"
+    }
+  },
+  // menu item
+  "vtex.menu@2.x:menu#websites": {
+    "children": [
+      "menu-item#shop"
+      // "menu-item#about-us"
+    ]
+  },
+  "menu-item#shop": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Shop"
+      },
+      "onMountBehavior": "closed"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#shop"
+    ]
+  },
+  "vtex.menu@2.x:submenu#shop": {
+    "children": [
+      "vtex.menu@2.x:menu#submenushop"
+    ]
+  },
+  "vtex.menu@2.x:menu#submenushop": {
+    "children": [
+      "menu-item#shop-two"
+    ]
+  },
+  "menu-item#shop-two": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Shop"
+      }
+    }
+  }
+}

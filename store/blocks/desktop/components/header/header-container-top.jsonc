@@ -1,0 +1,75 @@
+{
+  // container top
+  "flex-layout.row#desktop__header--top": {
+    "title": "container top",
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "container__header-top"
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "search-bar#header__search",
+      "flex-layout.col#promotions-desktop"
+      // "locale-switcher",
+    ]
+  },
+  "flex-layout.col#logo-desktop": {
+    "title": "logo-desktop",
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "logo"
+    ]
+  },
+  "flex-layout.col#promotions-desktop": {
+    "title": "container promotions disney and star+",
+    "children": [
+      "image#promotions-disney-and-star+"
+    ],
+    "props": {
+      "verticalAlign": "middle"
+    }
+  },
+  "image#promotions-disney-and-star+": {
+    "title": "image promotions-disney-and-star+ ",
+    "props": {
+      "src": "assets/image/header-desktop-promotion-disney.png",
+      "maxHeight": 39,
+      "maxWidth": 340
+    }
+  },
+  "logo": {
+    "title": "logo-image",
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/image/header-deskot-logo.png",
+      "width": "134",
+      "blockClass": "logo__mercado-libre"
+    }
+  },
+  "search-bar#header__search": {
+    "title": "search-bar",
+    "blocks": [
+      "autocomplete-result-list.v2"
+    ],
+    "props": {
+      "openAutocompleteOnFocus": false,
+      "displayMode": "search-button",
+      "maxWidth": 580,
+      "containerMode": "container",
+      "placeholder": "Buscar productos, marcas y más…"
+    }
+  },
+  "autocomplete-result-list.v2": {
+    "title": "search-bar__autocomplete",
+    "blocks": [
+      "product-summary"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+.headerRowContainer--container__header--desktop {
+  flex-direction: column;
+}
+
+.headerRowBackground--container__header--desktop {
+  background-color: #fff159;
+  padding-bottom  : 15px;
+}

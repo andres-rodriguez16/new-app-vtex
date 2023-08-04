@@ -1,0 +1,21 @@
+{
+  // desktop
+  "header-layout.desktop": {
+    "children": [
+      "header-row#container"
+    ],
+    "props": {
+      "blockClass": "container__header--desktop"
+    }
+  },
+  "header-row#container": {
+    "title": "header__container",
+    "children": [
+      "flex-layout.row#desktop__header--top",
+      "flex-layout.row#desktop__header--bottom"
+    ],
+    "props": {
+      "blockClass": "container__header--desktop"
+    }
+  }
+}
