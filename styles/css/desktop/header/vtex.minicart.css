@@ -1,8 +1,19 @@
 :global(.vtex-minicart-2-x-openIconContainer) {
   padding: 0;
-
 }
 
 .minicartContainer :global(.vtex-button):hover {
   background: transparent;
+}
+
+.minicartContainer :global(.vtex-button) {
+  border: 0;
+}
+
+.minicartContainer :global(.vtex-button__label) {
+  padding: 0;
+}
+
+.minicartWrapperContainer {
+  height: 30px;
 }

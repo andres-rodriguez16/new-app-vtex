@@ -1,0 +1,287 @@
+{
+  "menu-item#submenu-category-car": {
+    "props": {
+      "id": "menu-item-car",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Vehículos",
+        "text": "Vehículos"
+      },
+      "blockClass": "menuItem-text"
+    }
+  },
+  "menu-item#submenu-category-supermarket": {
+    "props": {
+      "id": "menu-item-supermarket",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Supermercado",
+        "text": "Supermercado"
+      },
+      "blockClass": "menuItem-text"
+    }
+  },
+  "menu-item#submenu-category-Appliances": {
+    "props": {
+      "id": "menu-item-Appliances",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Electrodomesticos",
+        "text": "Electrodomesticos"
+      },
+      "blockClass": "menuItem-text"
+    }
+  },
+  "menu-item#submenu-Home-&-Furniture": {
+    "props": {
+      "id": "menu-item-Home-&-Furniture",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Hogar y muebles",
+        "text": "Hogar y muebles"
+      },
+      "blockClass": "menuItem-text"
+    }
+  },
+  "menu-item#submenu-Sports-&-Fitness": {
+    "props": {
+      "id": "menu-item-Sports-&-Fitness",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Deportes y fitness",
+        "text": "Electrodomesticos"
+      },
+      "blockClass": "menuItem-text"
+    }
+  },
+  "menu-item#submenu-Beauty-&-Personal-Care": {
+    "props": {
+      "id": "menu-item-Sports-&-Fitness",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Belleza y Cuidado Personal",
+        "text": "Belleza y Cuidado Personal"
+      },
+      "blockClass": "menuItem-text"
+    }
+  },
+  "menu-item#submenu-Vehicle-Accessories": {
+    "props": {
+      "id": "menu-item-Sports-&-Fitness",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Accesorios para Vehículos",
+        "text": "Accesorios para Vehículos"
+      },
+      "blockClass": "menuItem-text"
+    }
+  },
+  "menu-item#submenu-Construction": {
+    "props": {
+      "id": "menu-item-Construction",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Construcción",
+        "text": "Construcción"
+      },
+      "blockClass": "menuItem-text"
+    }
+  },
+  "menu-item#submenu-Properties": {
+    "props": {
+      "id": "menu-item-Properties",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Inmuebles",
+        "text": "Inmuebles"
+      },
+      "blockClass": "menuItem-text"
+    }
+  },
+  "menu-item#submenu-International-Purchase": {
+    "props": {
+      "id": "menu-item-International-Purchase",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Compra Internacional",
+        "text": "Compra Internacional"
+      },
+      "blockClass": "menuItem-text"
+    }
+  },
+  "menu-item#submenu-Fashion": {
+    "props": {
+      "id": "menu-item-Fashion",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Moda",
+        "text": "Moda"
+      },
+      "blockClass": "menuItem-text"
+    }
+  },
+  "menu-item#submenu-games-&-toys": {
+    "props": {
+      "id": "menu-item-tools",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Juegos y Juguetes",
+        "text": "Juegos y Juguetes"
+      },
+      "blockClass": "menuItem-text"
+    }
+  },
+  "menu-item#submenu-babies": {
+    "props": {
+      "id": "menu-item-babies",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Bebés",
+        "text": "Bebés"
+      },
+      "blockClass": "menuItem-text"
+    }
+  },
+  "menu-item#submenu-Sustainable-Products": {
+    "props": {
+      "id": "menu-item-Sustainable-Products",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Productos Sustentables",
+        "text": "Productos Sustentables"
+      },
+      "blockClass": "menuItem-text"
+    }
+  },
+  "menu-item#submenu-Health-and-Medical-Equipment": {
+    "props": {
+      "id": "menu-item-Health-and-Medical-Equipment",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Salud y Equipamiento Médico",
+        "text": "Salud y Equipamiento Médico"
+      },
+      "blockClass": "menuItem-text"
+    }
+  },
+  "menu-item#submenu-Industries-and-Offices": {
+    "props": {
+      "id": "menu-item-Industries-and-Offices",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Industrias y Oficinas",
+        "text": "Industrias y Oficinas"
+      },
+      "blockClass": "menuItem-text"
+    }
+  },
+  "menu-item#submenu-services": {
+    "props": {
+      "id": "menu-item-services",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Servicios",
+        "text": "Servicios"
+      },
+      "blockClass": "menuItem-text"
+    }
+  },
+  "menu-item#submenu-Official-stores": {
+    "props": {
+      "id": "menu-item-Official-stores",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Tiendas oficiales",
+        "text": "Tiendas oficiales"
+      },
+      "blockClass": "menuItem-text"
+    }
+  },
+  "menu-item#submenu-See-more-categories": {
+    "props": {
+      "id": "menu-item-",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Ver más categorías",
+        "text": "Ver más categorías"
+      },
+      "blockClass": "menuItem-text"
+    }
+  }
+}

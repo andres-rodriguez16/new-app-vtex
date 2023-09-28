@@ -1,36 +1,77 @@
 {
-  // "sticky-layout#desktop": {
-  //   "children": [
-  //     "flex-layout.row#4-desktop",
-  //     "flex-layout.row#mega-menu"
-  //   ]
-  // },
-  // "flex-layout.row#4-desktop": {
-  //   "children": [
-  //     "flex-layout.col#trigger-mega-menu"
-  //   ]
-  // },
-  // "flex-layout.row#mega-menu": {
-  //   "children": [
-  //     "mega-menu#desktop"
-  //   ]
-  // },
-  // "mega-menu#desktop": {
-  //   "props": {
-  //     "openOnly": "horizontal"
-  //   }
-  // },
-  // "flex-layout.col#trigger-mega-menu": {
-  //   "props": {
-  //     "verticalAlign": "middle"
-  //   },
-  //   "children": [
-  //     "mega-menu-trigger-btn"
-  //   ]
-  // },
-  // "mega-menu-trigger-btn": {
-  //   "props": {
-  //     "Drawer": "drawer"
-  //   }
-  // }
+  // menu item
+  "vtex.menu@2.x:menu#categories": {
+    "children": [
+      "menu-item#categories"
+    ]
+  },
+  "menu-item#categories": {
+    "props": {
+      "id": "menu-item-categories",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Categoría",
+        "text": "Categorías"
+      },
+      "blockClass": "trigger-categories"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#categories"
+    ]
+  },
+  "vtex.menu@2.x:submenu#categories": {
+    "children": [
+      "vtex.menu@2.x:menu#submenushop"
+    ],
+    "props": {
+      "orientation": "horizontal"
+    }
+  },
+  "vtex.menu@2.x:menu#submenushop": {
+    "children": [
+      "menu-item#submenu-category-car",
+      "menu-item#submenu-category-supermarket",
+      "menu-item#submenu-category-technology",
+      "menu-item#submenu-category-Appliances",
+      "menu-item#submenu-Home-&-Furniture",
+      "menu-item#submenu-Sports-&-Fitness",
+      "menu-item#submenu-Beauty-&-Personal-Care",
+      "menu-item#submenu-Vehicle-Accessories",
+      "menu-item#submenu-Construction",
+      "menu-item#submenu-Properties",
+      "menu-item#submenu-International-Purchase",
+      "menu-item#submenu-Fashion",
+      "menu-item#submenu-games-&-toys",
+      "menu-item#submenu-babies",
+      "menu-item#submenu-Sustainable-Products",
+      "menu-item#submenu-Health-and-Medical-Equipment",
+      "menu-item#submenu-Industries-and-Offices",
+      "menu-item#submenu-services",
+      "menu-item#submenu-Official-stores",
+      "menu-item#submenu-See-more-categories"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-container-categories"
+    }
+  },
+  "menu-item#submenu-category-technology": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Tecnología",
+        "text": "Tecnología"
+      },
+      "blockClass": "menuItem-text"
+    }
+  }
 }

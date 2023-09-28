@@ -9,7 +9,7 @@
       "preventVerticalStretch": true,
       "fullWidth": true,
       "blockClass": "container__header--bottom",
-      "colGap": 7
+      "colGap": 10
     },
     "children": [
       "flex-layout.row#locations",
@@ -56,8 +56,7 @@
   "flex-layout.row#section__menu-center": {
     "title": "section__menu-center",
     "children": [
-      // "vtex.menu@2.x:menu#websites",
-      "flex-layout.col#categories",
+      "vtex.menu@2.x:menu#categories",
       "rich-text#Offers",
       "rich-text#History",
       "rich-text#Supermarket",
@@ -71,20 +70,11 @@
       "colSizing": "auto"
     }
   },
-  "flex-layout.col#categories": {
-    "title": "col-category",
-    "children": [
-      "rich-text#category"
-    ],
-    "props": {
-      "blockClass": "col-categories"
-    }
-  },
   // text menu center
   "rich-text#category": {
     "title": "text-category",
     "props": {
-      "text": "Categoría"
+      "text": "Categorías"
     }
   },
   "rich-text#Fashion": {
@@ -128,60 +118,39 @@
   "flex-layout.row#section__menu--user": {
     "title": "section__user",
     "children": [
+      "rich-text#create-your-account",
       "login",
+      "rich-text#my-shopping",
       "minicart.v2#header"
     ],
     "props": {
-      "colSizing": "auto"
+      "colSizing": "auto",
+      // "fullWidth": false
+      "colGap" : 6
     }
   },
-  // menu item
-  "vtex.menu@2.x:menu#websites": {
-    "children": [
-      "menu-item#shop"
-      // "menu-item#about-us"
-    ]
-  },
-  "menu-item#shop": {
+  "rich-text#create-your-account" : {
+    "title": "text-create-account",
     "props": {
-      "id": "menu-item-shop",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Shop",
-        "text": "Shop"
-      },
-      "onMountBehavior": "closed"
-    },
-    "blocks": [
-      "vtex.menu@2.x:submenu#shop"
-    ]
+      "text": " [Crea tu cuenta](/login)",
+      "blockClass": "text__create-account"
+    }
   },
-  "vtex.menu@2.x:submenu#shop": {
-    "children": [
-      "vtex.menu@2.x:menu#submenushop"
-    ]
-  },
-  "vtex.menu@2.x:menu#submenushop": {
-    "children": [
-      "menu-item#shop-two"
-    ]
-  },
-  "menu-item#shop-two": {
+  "rich-text#my-shopping" : {
+    "title": "text-my-shopping",
     "props": {
-      "id": "menu-item-shop",
-      "type": "custom",
-      "highlight": true,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Shop",
-        "text": "Shop"
-      }
+      "text": "[Mis compras](/account#/orders) ",
+      "blockClass": "text__my--shopping"
+    }
+  },
+  "login": {
+    "props": {
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Acess Code LOG-IN",
+      "emailPlaceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "showPasswordVerificationIntoTooltip": true,
+      "iconLabel": "Ingresa"
     }
   }
 }

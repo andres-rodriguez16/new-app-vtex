@@ -31,3 +31,23 @@
   transform       : translateX(-50%);
   text-align      : center;
 }
+
+.wrapper--text__create-account :global(.vtex-rich-text-0-x-paragraph),
+.wrapper--text__my--shopping :global(.vtex-rich-text-0-x-paragraph) {
+  margin     : 0;
+  display    : flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.container--text__create-account,
+.container--text__my--shopping {
+  display    : flex;
+  align-items: center;
+}
+
+.link--text__create-account,
+.link--text__my--shopping {
+  text-decoration: none;
+  color: black;
+}
